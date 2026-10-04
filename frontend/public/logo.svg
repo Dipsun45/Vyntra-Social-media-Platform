@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="vyntraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+    <linearGradient id="vyntraGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Glow Ring -->
+  <circle cx="50" cy="50" r="44" stroke="url(#vyntraGrad)" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.3" />
+  
+  <!-- Abstract Dynamic V Shape with Interlocking Nodes -->
+  <path d="M22 25 L44 76 C46 80 54 80 56 76 L78 25 C80 20 74 16 69 22 L50 60 L31 22 C26 16 20 20 22 25 Z" fill="url(#vyntraGrad)" filter="url(#glow)"/>
+  
+  <!-- Connection Nodes -->
+  <circle cx="27" cy="22" r="5" fill="url(#vyntraGlow)" />
+  <circle cx="73" cy="22" r="5" fill="url(#vyntraGlow)" />
+  <circle cx="50" cy="74" r="6" fill="url(#vyntraGrad)" />
+</svg>
